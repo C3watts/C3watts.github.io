@@ -1,0 +1,44 @@
+Briefly address the following points, modify this text file and include it 
+in your reply.
+------------------------------------------------------------------------------
+
+ 
+Explain the conceptual distinctions between scripting languages, C++, C, 
+and assembly and when it is appropriate and inappropriate to use each.
+--------------------------------------
+Assembly is the closest language to machine language.  There are many different Assembly languages and it’s non universal code makes it a hindrance for organizations hoping to use it.  C and C++ are universal, but aren’t as close to machine language.  C++ is even slower than C, but is helpful for huge blocks of code that won’t be ran as many times.  If a program is going to be iterated on more, than leaving it in C++ is best.  Eventually, C++ code can be turned into C code, but only when the iterating is complete.  Also, when prototyping often the advantages of C are away.
+
+
+Describe the limitations of code reuse through inheritance in a large, 
+diverse codebase.  Propose alternative solutions to these limitations.
+--------------------------------------
+The more "small" changes you need to make to reuse code, the less helpful it is.  This is a bigger problem the more the code is updated.  This can be helped by reusing smaller pieces of code and be keeping track of the source of each piece of code.
+
+
+
+
+Compare and contrast the biggest challenges of console game development
+versus PC game development.
+--------------------------------------
+Consoles are more limited by the hardware, this is a pro and a con.  They require more presentation that a PC Game, and usually are expected to entertain more than a single person to some degree.  Players also have more expectations about the controls of the game.
+
+PC game's are expected to have more options and must perform well with different options..  Have somewhat limited controls, has a different audience.
+
+
+
+How would you attempt to understand the design of a large code base in a short
+period of time?
+--------------------------------------
+I would look for the main files that are dictating the other process.  First I would scan the entire file to understand the structure of it, I also would keep track of which systems are talking to eachother, then I would go through and try and understand the purpose of each function.  I also would be careful to find any programs that are managing the code.  Finally, I would look for comments.
+
+
+
+Talk about a few Best Practices you use when programming in a team environment.
+--------------------------------------
+Use the infrastructure of the language whenever possible.  Often you can use functions more often, this is good because the function name can help explain what the function does, as well as the parameters.  
+Have consistent naming schemes, for example grabGearSecondCharacter should not be confused with grabSecondCharacterGear.  The ordering should be meaningful.
+Spacing, Commenting, Indenting, Capitalizing, not taking unpredictable shortcuts.
+
+Discuss an instance of a bad game design decision in an otherwise good game.
+--------------------------------------
+Recently Magic: the Gathering released the egyptian flavored set, Amonkhet.  The set of cards had a theme of sacrifice, perserverance and the afterlife.  The new named mechanics of of the set were Cycling(Life and Death), Exert(Perserverance), Embalm (Afterlife), Brick Counters(Pyramids, Perserverance), and Aftermath(Afterlife?).  From the name alone I think Aftermath stands out.  They wanted to approach the afterlife from a magical perspective since Embalm was very physical (literally turning dead creatures into mummies).  From the start I think this idea was a near miss, which is troubling since misses like this tend to never get tossed until it's too late.  The mechanic featured reusing spell's from the graveyard to enable the spell's fallen side.  Already the flavor is twisted, people don't consider spells to be alive, or to have split personalities.  The goal of imagining a person's afterlife as impactful on our present life is not realized here.  It is necessary that the mechanic somehow references a creature dying on the battlefield.  In the end, developement found some interesting gameplay around the concept, and even created an interesting card pair names like Rags to Riches, Insult to Injury, etc.  I believe the solution to the problem was to avoid it, and instead of creating a mechanic, make a few cards with tons of text to embody the idea.  
